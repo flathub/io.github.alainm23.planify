@@ -110,6 +110,22 @@
             ]
         },
         {
+            "name" : "libportal",
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dbackends=['gtk4']",
+                "-Ddocs=false",
+                "-Dtests=false"
+            ],
+            "sources" : [
+                {
+                    "type" : "git",
+                    "url" : "https://github.com/flatpak/libportal.git",
+                    "tag": "0.6"
+                }
+            ]
+        },
+        {
             "name": "planify",
             "builddir": true,
             "buildsystem": "meson",
@@ -117,7 +133,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/alainm23/planner.git",
-                    "commit": "696fb7ab3c66ea4a14a5167cb5b44e9444294ecb"
+                    "commit": "547b32bb3a56fd62559db18986c3fb769b15d0a4"
                 }
             ]
         }
