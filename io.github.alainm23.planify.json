@@ -100,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.48/evolution-data-server-3.48.3.tar.xz",
-                    "sha256": "b71e412e52f567c83394b5926df92b4f4f6d2cddebad384a517c720671fad996",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.48/evolution-data-server-3.48.4.tar.xz",
+                    "sha256": "997e3f93b17efb0affcc017bee8780ba5fa2c009e36551bbc91a08ae552d6d60",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -110,17 +110,17 @@
             ]
         },
         {
-            "name" : "libportal",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "libportal",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dbackends=['gtk4']",
                 "-Ddocs=false",
                 "-Dtests=false"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/flatpak/libportal.git",
+                    "type": "git",
+                    "url": "https://github.com/flatpak/libportal.git",
                     "tag": "0.6"
                 }
             ]
