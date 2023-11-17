@@ -56,8 +56,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz",
-                    "sha256": "b44705dd71ca4538c86fb16248483ab4b48978524fb1da5097bd76aa2e0f0c33",
+                    "url": "https://github.com/libical/libical/releases/download/v3.0.17/libical-3.0.17.tar.gz",
+                    "sha256": "bcda9a6db6870240328752854d1ea475af9bbc6356e6771018200e475e5f781b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1637,
@@ -110,17 +110,17 @@
             ]
         },
         {
-            "name" : "libportal",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "libportal",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dbackends=['gtk4']",
                 "-Ddocs=false",
                 "-Dtests=false"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/flatpak/libportal.git",
+                    "type": "git",
+                    "url": "https://github.com/flatpak/libportal.git",
                     "tag": "0.6"
                 }
             ]
