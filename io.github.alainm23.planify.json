@@ -129,6 +129,10 @@
             "name": "planify",
             "builddir": true,
             "buildsystem": "meson",
+            "config-opts" : [
+                "-Dtracing=false",
+                "-Dprofile=default"
+            ],
             "sources": [
                 {
                     "type": "git",
