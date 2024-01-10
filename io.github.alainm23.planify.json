@@ -100,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.2.tar.xz",
-                    "sha256": "5e66270388d50c14f3b1ae3fa0d2127b9fedce752acd393b5545281b01fc4970",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.3.tar.xz",
+                    "sha256": "225d70b6a40268f225c2ac428ee5eb52d5a6fda2602955d50a24970526fe2452",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -129,7 +129,7 @@
             "name": "planify",
             "builddir": true,
             "buildsystem": "meson",
-            "config-opts" : [
+            "config-opts": [
                 "-Dtracing=false",
                 "-Dprofile=default"
             ],
