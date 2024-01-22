@@ -131,7 +131,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gxml.git"
+                    "url": "https://gitlab.gnome.org/GNOME/gxml.git",
+                    "tag": "0.20.3"
                 }
             ]
         },
@@ -146,7 +147,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/alainm23/planner.git"
+                    "url": "https://github.com/alainm23/planner.git",
+                    "commit": "e0ee9c19576ac6ec5426b2200d089444608a6ea3"
                 }
             ]
         }
