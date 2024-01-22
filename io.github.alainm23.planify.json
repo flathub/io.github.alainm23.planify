@@ -1,12 +1,9 @@
 {
-    "app-id" : "io.github.alainm23.planify.Devel",
-    "runtime" : "org.gnome.Platform",
+    "app-id": "io.github.alainm23.planify",
+    "runtime": "org.gnome.Platform",
     "runtime-version": "45",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "io.github.alainm23.planify.Devel",
-    "tags" : [
-        "devel"
-    ],
+    "sdk": "org.gnome.Sdk",
+    "command": "io.github.alainm23.planify",
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -14,11 +11,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--talk-name=org.gnome.evolution.dataserver.Calendar8",
-        "--talk-name=org.gnome.evolution.dataserver.Sources5",
-        "--talk-name=io.github.alainm23.planify",
-        "--talk-name=io.github.alainm23.planify.quick-add",
-        "--own-name=io.github.alainm23.planify.quick-add",
-        "--own-name=io.github.alainm23.planify"
+        "--talk-name=org.gnome.evolution.dataserver.Sources5"
     ],
     "cleanup": [
         "/include",
@@ -31,18 +24,8 @@
         "*.la",
         "*.a"
     ],
-    "modules" : [
-        {
-            "name": "intltool",
-            "cleanup": [ "*" ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
-                    "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
-                }
-            ]
-        },
+    "modules": [
+        "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "granite",
             "buildsystem": "meson",
@@ -117,8 +100,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.2.tar.xz",
-                    "sha256": "5e66270388d50c14f3b1ae3fa0d2127b9fedce752acd393b5545281b01fc4970",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.3.tar.xz",
+                    "sha256": "225d70b6a40268f225c2ac428ee5eb52d5a6fda2602955d50a24970526fe2452",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -153,17 +136,17 @@
             ]
         },
         {
-            "name" : "planify",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "planify",
+            "builddir": true,
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Dtracing=true",
                 "-Dprofile=development"
             ],
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/alainm23/planify.git"
+                    "url": "https://github.com/alainm23/planner.git"
                 }
             ]
         }
