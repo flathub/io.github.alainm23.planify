@@ -1,9 +1,12 @@
 {
-    "app-id": "io.github.alainm23.planify",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "44",
-    "sdk": "org.gnome.Sdk",
-    "command": "io.github.alainm23.planify",
+    "app-id" : "io.github.alainm23.planify.Devel",
+    "runtime" : "org.gnome.Platform",
+    "runtime-version": "45",
+    "sdk" : "org.gnome.Sdk",
+    "command" : "io.github.alainm23.planify.Devel",
+    "tags" : [
+        "devel"
+    ],
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -11,7 +14,11 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--talk-name=org.gnome.evolution.dataserver.Calendar8",
-        "--talk-name=org.gnome.evolution.dataserver.Sources5"
+        "--talk-name=org.gnome.evolution.dataserver.Sources5",
+        "--talk-name=io.github.alainm23.planify",
+        "--talk-name=io.github.alainm23.planify.quick-add",
+        "--own-name=io.github.alainm23.planify.quick-add",
+        "--own-name=io.github.alainm23.planify"
     ],
     "cleanup": [
         "/include",
@@ -24,8 +31,18 @@
         "*.la",
         "*.a"
     ],
-    "modules": [
-        "shared-modules/intltool/intltool-0.51.json",
+    "modules" : [
+        {
+            "name": "intltool",
+            "cleanup": [ "*" ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz",
+                    "sha256": "67c74d94196b153b774ab9f89b2fa6c6ba79352407037c8c14d5aeb334e959cd"
+                }
+            ]
+        },
         {
             "name": "granite",
             "buildsystem": "meson",
@@ -56,8 +73,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.16/libical-3.0.16.tar.gz",
-                    "sha256": "b44705dd71ca4538c86fb16248483ab4b48978524fb1da5097bd76aa2e0f0c33",
+                    "url": "https://github.com/libical/libical/releases/download/v3.0.17/libical-3.0.17.tar.gz",
+                    "sha256": "bcda9a6db6870240328752854d1ea475af9bbc6356e6771018200e475e5f781b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1637,
@@ -100,8 +117,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.48/evolution-data-server-3.48.3.tar.xz",
-                    "sha256": "b71e412e52f567c83394b5926df92b4f4f6d2cddebad384a517c720671fad996",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.50/evolution-data-server-3.50.2.tar.xz",
+                    "sha256": "5e66270388d50c14f3b1ae3fa0d2127b9fedce752acd393b5545281b01fc4970",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -110,14 +127,43 @@
             ]
         },
         {
-            "name": "planify",
-            "builddir": true,
+            "name": "libportal",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dbackends=['gtk4']",
+                "-Ddocs=false",
+                "-Dtests=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/flatpak/libportal.git",
+                    "tag": "0.6"
+                }
+            ]
+        },
+        {
+            "name": "gxml",
             "buildsystem": "meson",
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/alainm23/planner.git",
-                    "commit": "696fb7ab3c66ea4a14a5167cb5b44e9444294ecb"
+                    "url": "https://gitlab.gnome.org/GNOME/gxml.git"
+                }
+            ]
+        },
+        {
+            "name" : "planify",
+            "builddir" : true,
+            "buildsystem" : "meson",
+            "config-opts" : [
+                "-Dtracing=true",
+                "-Dprofile=development"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/alainm23/planify.git"
                 }
             ]
         }
