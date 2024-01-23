@@ -1,9 +1,9 @@
 {
-  "app-id": "io.github.alainm23.planify.Devel",
+  "app-id": "io.github.alainm23.planify",
   "runtime": "org.gnome.Platform",
   "runtime-version": "45",
   "sdk": "org.gnome.Sdk",
-  "command": "io.github.alainm23.planify.Devel",
+  "command": "io.github.alainm23.planify",
   "tags": ["devel"],
   "finish-args": [
     "--device=dri",
@@ -135,7 +135,6 @@
       "name": "planify",
       "builddir": true,
       "buildsystem": "meson",
-      "config-opts": ["-Dtracing=true", "-Dprofile=development"],
       "sources": [
         {
           "type": "git",
