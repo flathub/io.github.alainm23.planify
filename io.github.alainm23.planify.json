@@ -10,6 +10,7 @@
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--filesystem=home",
         "--talk-name=org.gnome.evolution.dataserver.Calendar8",
         "--talk-name=org.gnome.evolution.dataserver.Sources5"
     ],
@@ -126,6 +127,16 @@
             ]
         },
         {
+            "name": "gxml",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gxml.git"
+                }
+            ]
+        },
+        {
             "name": "planify",
             "builddir": true,
             "buildsystem": "meson",
@@ -137,7 +148,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/alainm23/planner.git",
-                    "commit": "b0d21d71630e980366d89e95f82498dd89b47835"
+                    "commit": "892661c421fc81d8c685395c3342265ff073b285"
                 }
             ]
         }
