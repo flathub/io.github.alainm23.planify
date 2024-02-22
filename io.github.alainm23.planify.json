@@ -132,7 +132,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gxml.git"
+                    "url": "https://gitlab.gnome.org/GNOME/gxml.git",
+                    "commit": "fb7817acee9c5b0f812b27e61bf7ccd10ff4c4ca"
                 }
             ]
         },
