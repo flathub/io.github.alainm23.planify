@@ -10,6 +10,7 @@
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--filesystem=home",
         "--talk-name=org.gnome.evolution.dataserver.Calendar8",
         "--talk-name=org.gnome.evolution.dataserver.Sources5"
     ],
@@ -122,6 +123,17 @@
                     "type": "git",
                     "url": "https://github.com/flatpak/libportal.git",
                     "tag": "0.6"
+                }
+            ]
+        },
+        {
+            "name": "gxml",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gxml.git",
+                    "commit": "fb7817acee9c5b0f812b27e61bf7ccd10ff4c4ca"
                 }
             ]
         },
