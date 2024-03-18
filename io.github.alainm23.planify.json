@@ -10,6 +10,8 @@
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
+        "--socket=wayland",
+        "--socket=wayland",
         "--filesystem=home",
         "--talk-name=org.gnome.evolution.dataserver.Calendar8",
         "--talk-name=org.gnome.evolution.dataserver.Sources5"
@@ -149,7 +151,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/alainm23/planner.git",
-                    "commit": "5796e5ad809a9ff549468d0e41a5317bc04f7690"
+                    "commit": "736c9d363214ea38f1f6e412f4b6979c212bf772"
                 }
             ]
         }
