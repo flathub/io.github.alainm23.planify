@@ -151,7 +151,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/alainm23/planner.git",
-                    "commit": "0e118d6663427e9116e5cf55eaedbf868f5c46b0"
+                    "tag": "4.10.4"
                 }
             ]
         }
