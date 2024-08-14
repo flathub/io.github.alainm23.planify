@@ -12,7 +12,6 @@
         "--socket=wayland",
         "--socket=wayland",
         "--socket=wayland",
-        "--filesystem=home",
         "--talk-name=org.gnome.evolution.dataserver.Calendar8",
         "--talk-name=org.gnome.evolution.dataserver.Sources5"
     ],
