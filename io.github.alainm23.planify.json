@@ -58,8 +58,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.18/libical-3.0.18.tar.gz",
-                    "sha256": "72b7dc1a5937533aee5a2baefc990983b66b141dd80d43b51f80aced4aae219c",
+                    "url": "https://github.com/libical/libical/releases/download/v3.0.19/libical-3.0.19.tar.gz",
+                    "sha256": "6a1e7f0f50a399cbad826bcc286ce10d7151f3df7cc103f641de15160523c73f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1637,
