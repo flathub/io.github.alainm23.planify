@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.alainm23.planify",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "47",
+    "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
     "command": "io.github.alainm23.planify",
     "finish-args": [
@@ -149,7 +149,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/alainm23/planner.git",
-                    "tag": "4.13.0"
+                    "tag": "4.13.2"
                 }
             ]
         }
