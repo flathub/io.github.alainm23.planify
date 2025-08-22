@@ -34,7 +34,66 @@
                 {
                     "type": "git",
                     "url": "https://github.com/elementary/granite.git",
-                    "tag": "7.2.0"
+                    "tag": "7.6.0",
+                    "commit": "065ba1f245b60ef867a6ca145e0891cf84eddcc7",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
+                }
+            ],
+            "modules": [
+                {
+                    "name": "sassc",
+                    "cleanup": [
+                        "*"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/sass/sassc/archive/3.6.2.tar.gz",
+                            "sha256": "608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 12485,
+                                "url-template": "https://github.com/sass/sassc/archive/$version.tar.gz"
+                            }
+                        },
+                        {
+                            "type": "script",
+                            "dest-filename": "autogen.sh",
+                            "commands": [
+                                "autoreconf -si"
+                            ]
+                        }
+                    ],
+                    "modules": [
+                        {
+                            "name": "libsass",
+                            "cleanup": [
+                                "*"
+                            ],
+                            "sources": [
+                                {
+                                    "type": "archive",
+                                    "url": "https://github.com/sass/libsass/archive/3.6.6.tar.gz",
+                                    "sha256": "11f0bb3709a4f20285507419d7618f3877a425c0131ea8df40fe6196129df15d",
+                                    "x-checker-data": {
+                                        "type": "anitya",
+                                        "project-id": 11766,
+                                        "url-template": "https://github.com/sass/libsass/archive/$version.tar.gz"
+                                    }
+                                },
+                                {
+                                    "type": "script",
+                                    "dest-filename": "autogen.sh",
+                                    "commands": [
+                                        "autoreconf -si"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -114,7 +173,7 @@
             "name": "libportal",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dbackends=['gtk4']",
+                "-Dbackend-gtk4=enabled",
                 "-Ddocs=false",
                 "-Dtests=false"
             ],
@@ -122,7 +181,12 @@
                 {
                     "type": "git",
                     "url": "https://github.com/flatpak/libportal.git",
-                    "tag": "0.6"
+                    "tag": "0.9.1",
+                    "commit": "8f5dc8d192f6e31dafe69e35219e3b707bde71ce",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -133,7 +197,12 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gxml.git",
-                    "commit": "fb7817acee9c5b0f812b27e61bf7ccd10ff4c4ca"
+                    "tag": "0.20.4",
+                    "commit": "101eb887d6d656cdccd8866457f5448bebeddb14",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
                 }
             ]
         },
@@ -148,8 +217,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/alainm23/planner.git",
-                    "tag": "4.13.2"
+                    "url": "https://github.com/alainm23/planify.git",
+                    "tag": "4.13.2",
+                    "commit": "aeac62ffd4d897e61f676890c7a60c8d999adbab"
                 }
             ]
         }
