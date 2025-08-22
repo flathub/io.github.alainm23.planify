@@ -36,33 +36,6 @@
                     "url": "https://github.com/elementary/granite.git",
                     "tag": "7.2.0"
                 }
-            ],
-            "modules": [
-                {
-                    "name": "sassc",
-                    "cleanup": [
-                        "*"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/sass/sassc/archive/3.6.2.tar.gz",
-                            "sha256": "608dc9002b45a91d11ed59e352469ecc05e4f58fc1259fc9a9f5b8f0f8348a03",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 12485,
-                                "url-template": "https://github.com/sass/sassc/archive/$version.tar.gz"
-                            }
-                        },
-                        {
-                            "type": "script",
-                            "dest-filename": "autogen.sh",
-                            "commands": [
-                                "autoreconf -si"
-                            ]
-                        }
-                    ]
-                }
             ]
         },
         {
