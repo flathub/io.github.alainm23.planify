@@ -159,8 +159,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/alainm23/planify.git",
-                    "tag": "4.13.2",
-                    "commit": "aeac62ffd4d897e61f676890c7a60c8d999adbab"
+                    "tag": "4.13.4"
                 }
             ]
         }
