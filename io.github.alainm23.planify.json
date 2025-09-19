@@ -147,7 +147,7 @@
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/chergert/libspelling.git",
                     "commit" : "07d3bbbbad393b7594918b8df3486531edb61aaf",
-                    "tag": "0.8.0"
+                    "tag": "0.4.8"
                 }
             ]
         },
