@@ -145,7 +145,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/chergert/libspelling.git",
+                    "url" : "https://gitlab.gnome.org/GNOME/libspelling.git",
                     "commit" : "e41e11d6ca6f5af987a46caa08036d5f0f629892",
                     "tag": "0.4.9",
                     "x-checker-data": {
