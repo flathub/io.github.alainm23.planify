@@ -1,7 +1,7 @@
 {
     "app-id": "io.github.alainm23.planify",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "io.github.alainm23.planify",
     "finish-args": [
@@ -26,7 +26,6 @@
         "*.a"
     ],
     "modules": [
-        "shared-modules/intltool/intltool-0.51.json",
         {
             "name": "libical",
             "buildsystem": "cmake-ninja",
