@@ -89,8 +89,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.59/evolution-data-server-3.59.1.tar.xz",
-                    "sha256": "f4c178f6f87b4a44ddc553da636b7e874eb3ab93661d3f5ca3400ec9cb1c5f50",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.59/evolution-data-server-3.59.2.tar.xz",
+                    "sha256": "15bd798c85dee923462bebe880761b4668b6c5065584e840900988389add83bf",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -145,8 +145,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libspelling.git",
-                    "commit": "e41e11d6ca6f5af987a46caa08036d5f0f629892",
-                    "tag": "0.4.9",
+                    "commit": "1facdde8e1c0fd72bed806f9a9be2fbec83af5f2",
+                    "tag": "0.4.10",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
