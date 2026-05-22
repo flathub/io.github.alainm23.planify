@@ -44,8 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.20/libical-3.0.20.tar.gz",
-                    "sha256": "e73de92f5a6ce84c1b00306446b290a2b08cdf0a80988eca0a2c9d5c3510b4c2",
+                    "url": "https://github.com/libical/libical/releases/download/v4.0.1/libical-4.0.1.tar.gz",
+                    "sha256": "7c1d8b780ce305a8823e5824ec4d7eb05d85ae8f808836b495aa37b0c3d08337",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1637,
@@ -88,8 +88,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.60/evolution-data-server-3.60.1.tar.xz",
-                    "sha256": "33f92d3b8822eba04c313796c0778cbb65a1a38472e857edc5f98854cca9b34c",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.60/evolution-data-server-3.60.2.tar.xz",
+                    "sha256": "2084dbdac396371b365d504c1ff45866ba8dca2f1252e5da1d3d9c33abdc1286",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
