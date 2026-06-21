@@ -39,7 +39,8 @@
                 "-DICAL_GLIB_VAPI=true",
                 "-DICAL_GLIB=true",
                 "-DICAL_BUILD_DOCS=false",
-                "-DWITH_CXX_BINDINGS=false"
+                "-DWITH_CXX_BINDINGS=false",
+                "-DLIBICAL_JAVA_BINDINGS=false"
             ],
             "sources": [
                 {
