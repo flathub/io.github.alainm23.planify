@@ -44,8 +44,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/libical/libical/releases/download/v3.0.20/libical-3.0.20.tar.gz",
-                    "sha256": "e73de92f5a6ce84c1b00306446b290a2b08cdf0a80988eca0a2c9d5c3510b4c2",
+                    "url": "https://github.com/libical/libical/releases/download/v4.0.3/libical-4.0.3.tar.gz",
+                    "sha256": "86f29029d0ec9fa30c9001de16c0859a3816ae154ff5b097392b014e21a3d254",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1637,
@@ -109,8 +109,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/flatpak/libportal.git",
-                    "tag": "0.9.1",
-                    "commit": "8f5dc8d192f6e31dafe69e35219e3b707bde71ce",
+                    "tag": "0.10.0",
+                    "commit": "c23024018c8eb076549a1517fcb2d7f80d3e2ed5",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
