@@ -88,8 +88,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.gnome.org/sources/evolution-data-server/3.60/evolution-data-server-3.60.1.tar.xz",
-                    "sha256": "33f92d3b8822eba04c313796c0778cbb65a1a38472e857edc5f98854cca9b34c",
+                    "url": "https://download.gnome.org/sources/evolution-data-server/3.61/evolution-data-server-3.61.2.tar.xz",
+                    "sha256": "be0415353e388c2eed844a464391b43f07b47e3e1e937a3f364592f008b651fb",
                     "x-checker-data": {
                         "type": "gnome",
                         "name": "evolution-data-server"
@@ -109,8 +109,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/flatpak/libportal.git",
-                    "tag": "0.9.1",
-                    "commit": "8f5dc8d192f6e31dafe69e35219e3b707bde71ce",
+                    "tag": "0.10.0",
+                    "commit": "c23024018c8eb076549a1517fcb2d7f80d3e2ed5",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -154,17 +154,17 @@
             ]
         },
         {
-            "name" : "chrono",
-            "buildsystem" : "meson",
-            "config-opts" : [
+            "name": "chrono",
+            "buildsystem": "meson",
+            "config-opts": [
                 "-Ddocs=false",
                 "-Dtests=false"
             ],
-            "sources" : [
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/alainm23/chrono.git",
-                    "tag" : "1.0.0"
+                    "type": "git",
+                    "url": "https://github.com/alainm23/chrono.git",
+                    "tag": "1.0.0"
                 }
             ]
         },
