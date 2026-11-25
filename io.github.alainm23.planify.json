@@ -120,22 +120,6 @@
             ]
         },
         {
-            "name": "gxml",
-            "buildsystem": "meson",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gxml.git",
-                    "tag": "0.20.4",
-                    "commit": "101eb887d6d656cdccd8866457f5448bebeddb14",
-                    "x-checker-data": {
-                        "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
-                    }
-                }
-            ]
-        },
-        {
             "name": "libspelling",
             "buildsystem": "meson",
             "config-opts": [
@@ -237,7 +221,7 @@
                 {
                     "type": "git",
                     "url": "https://github.com/alainm23/planify.git",
-                    "tag": "v4.20.0"
+                    "tag": "v4.21.0"
                 }
             ]
         }
